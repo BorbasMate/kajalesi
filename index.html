@@ -11,12 +11,17 @@
         document.getElementsByTagName("img")[0].style.width = ws + "%";
     }
 
-    for (var i = 20; i < 100; i++) {
+    function setBorderRadius(br) {
+        document.getElementsByTagName("img")[0].style.borderRadius = br + "%";
+    }
+
+    for (let i = 20; i < 120; i++) {
         window.setTimeout(setWidthSize, i*100, i);
+        window.setTimeout(setBorderRadius, i*25, i);
     }
 </script>
 
-<img src="IMG_20210602_060749.jpg" alt="Kaja" style="width: 20%; border: 2px solid blue;border-radius: 50%"/>
+<img src="IMG_20210602_060749.jpg" alt="Kaja" style="width: 20%; border: 2px solid blue; border-radius: 1%"/>
 
 </body>
 </html>
