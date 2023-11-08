@@ -5,47 +5,60 @@
     <title>Kaja-lesi</title>
     <style>
         body {
-            background-image: url('/Máté/régi HÉV.jpg');
+            background-image: url("images/jungle.jpg");
             background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .test{
-            height:100px;
+            height:50px;
             width:100px;
+            border-radius: 10px;
+            background-color: chocolate;
+            color: wheat;
+            font-size: larger;
         }
     </style>
-
 </head>
 <body>
+    <script>
+        function setWidthSize(ws) {
+            document.getElementsByTagName("img")[0].style.width = ws + "%";
+        }
 
-<script>
-    function setWidthSize(ws) {
-        document.getElementsByTagName("img")[0].style.width = ws + "%";
-    }
+        function setBorderRadius(br) {
+            document.getElementsByTagName("img")[0].style.borderRadius = br + "%";
+        }
 
-    function setBorderRadius(br) {
-        document.getElementsByTagName("img")[0].style.borderRadius = br + "%";
-    }
+        let k = 0;
+        function changeImage() {
+            let img = document.getElementById("image");
+            if (k % 2 === 0) {
+                img.src = "images/tiger.jpg";
+            } else {
+                img.src = "images/kaja.jpg";
+            }
+            return k++;
+        }
 
-    function changeImage() {
-        var img = document.getElementById("image");
-        img.src="images/tiger.jpg";
-        return false;
-    }
+        for (let i = 10; i < 50; i++) {
+            window.setTimeout(setWidthSize, i * 100, i);
+            window.setTimeout(setBorderRadius, i * 25, i);
+        }
+    </script>
 
-    for (let i = 10; i < 50; i++) {
-        window.setTimeout(setWidthSize, i * 100, i);
-        window.setTimeout(setBorderRadius, i * 25, i);
-    }
 
-</script>
+    <h1 style="color: paleturquoise; font-size: x-large"> Megbolondult a háziállatom </h1>
 
-<h1> Megbolondult a háziállatom </h1>
+    <button class="test" onclick="changeImage();">Try It</button>
+    <br>
 
-<img id="image" src="images/IMG_20210602_060749.jpg" alt="Kaja"
-     style="width: 20%; height: 20%; border: 2px solid blue; border-radius: 1%"/>
+    <img id="image" src="images/kaja.jpg" alt="Kaja"
+    style="width: 20%; height: 20%; border: 2px solid green; border-radius: 1%"/>
 
-<button class="test" onclick="changeImage();">Try It</button>
+    <img id="image2" src="images/royalcanin.png" alt="Kaja-kaja"
+         style="width: 10%; height: 10%; border: 2px solid green; border-radius: 0%;
+        bottom: 0; right: 0"/>
 
 </body>
 </html>
