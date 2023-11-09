@@ -1,0 +1,14 @@
+body {
+    background-image: url("images/jungle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test{
+    height:50px;
+    width:100px;
+    border-radius: 10px;
+    background-color: chocolate;
+    color: wheat;
+    font-size: larger;
+}

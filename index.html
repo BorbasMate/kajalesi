@@ -3,51 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Kaja-lesi</title>
-    <style>
-        body {
-            background-image: url("images/jungle.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .test{
-            height:50px;
-            width:100px;
-            border-radius: 10px;
-            background-color: chocolate;
-            color: wheat;
-            font-size: larger;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
 </head>
 <body>
-    <script>
-        function setWidthSize(ws) {
-            document.getElementsByTagName("img")[0].style.width = ws + "%";
-        }
-
-        function setBorderRadius(br) {
-            document.getElementsByTagName("img")[0].style.borderRadius = br + "%";
-        }
-
-        let k = 0;
-        function changeImage() {
-            let img = document.getElementById("image");
-            if (k % 2 === 0) {
-                img.src = "images/tiger.jpg";
-            } else {
-                img.src = "images/kaja.jpg";
-            }
-            return k++;
-        }
-
-        for (let i = 10; i < 50; i++) {
-            window.setTimeout(setWidthSize, i * 100, i);
-            window.setTimeout(setBorderRadius, i * 25, i);
-        }
-    </script>
-
-
     <h1 style="color: paleturquoise; font-size: x-large"> Megbolondult a háziállatom </h1>
 
     <button class="test" onclick="changeImage();">Try It</button>
@@ -56,7 +15,7 @@
     <img id="image" src="images/kaja.jpg" alt="Kaja"
     style="width: 20%; height: 20%; border: 2px solid green; border-radius: 1%"/>
 
-    <img id="image2" src="images/royalcanin.png" alt="Kaja-kaja"
+    <img id="image2" src="images/royalcanin.png" alt="Royal Canin"
          style="width: 10%; height: 10%; border: 2px solid green; border-radius: 0%;
         bottom: 0; right: 0"/>
 
