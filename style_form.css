@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(18,50,167,1) 46%, rgba(0,212,255,1) 100%);
+    color: dodgerblue;
+}
+
+.centered {
+    text-align: center;
+    color: darkblue;
+    padding: 15px;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+form div label {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+form div input, textarea {
+    width: 95%;
+}
+
+.radio-and-checkbox-label {
+    display: inline;
+}
+
+.radio-and-checkbox-input {
+    width: auto;
+}
+
+.file-label {
+    padding: 5px;
+}
+
+.file-input {
+    padding: 5px;
+}
+
+.button-container {
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+.button-container button {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.terms-and-conditions {
+    margin-top: 25px;
+}

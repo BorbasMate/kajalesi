@@ -4,11 +4,35 @@ body {
     background-size: cover;
 }
 
-.test{
-    height:50px;
-    width:100px;
+.main {
+    color: paleturquoise;
+    font-size: x-large;
+}
+
+.button {
+    height: 50px;
+    width: auto;
     border-radius: 10px;
     background-color: chocolate;
     color: wheat;
     font-size: larger;
+    display: inline;
 }
+
+
+#image {
+    width: 20%;
+    height: 20%;
+    border: 2px solid green;
+    border-radius: 1%;
+}
+
+#image2 {
+    width: 10%;
+    height: 10%;
+    border: 2px solid green;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+}
+

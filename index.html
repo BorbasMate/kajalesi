@@ -7,17 +7,16 @@
     <script src="functions.js"></script>
 </head>
 <body>
-    <h1 style="color: paleturquoise; font-size: x-large"> Megbolondult a háziállatom </h1>
+    <h1 class="main"> Megbolondult a háziállatom </h1>
 
-    <button class="test" onclick="changeImage();">Try It</button>
-    <br>
+    <div>
+        <button class="button" onclick="changeImage()">Try It</button>
+        <button class="button" onclick="window.open('registration.html', '_blank');">Register your animal</button>
+    </div>
 
-    <img id="image" src="images/kaja.jpg" alt="Kaja"
-    style="width: 20%; height: 20%; border: 2px solid green; border-radius: 1%"/>
 
-    <img id="image2" src="images/royalcanin.png" alt="Royal Canin"
-         style="width: 10%; height: 10%; border: 2px solid green; border-radius: 0%;
-        bottom: 0; right: 0"/>
+    <img id="image" src="images/kaja.jpg" alt="Kaja"/>
+    <img id="image2" src="images/royalcanin.png" alt="Royal Canin"/>
 
 </body>
 </html>
